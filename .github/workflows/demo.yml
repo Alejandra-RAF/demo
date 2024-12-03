@@ -10,3 +10,7 @@ jobs:
       - name: Adios
         run: echo "Adios"
       - run: echo "..."
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - run: echo "The ${{ github.repository }} repositiry has "
+      - run: echo "The worflow is now ready to test"
